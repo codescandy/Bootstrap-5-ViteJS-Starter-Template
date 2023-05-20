@@ -14,7 +14,7 @@ export default defineConfig({
     outDir: '../dist',
     emptyOutDir: true,
     rollupOptions: {
-      input: glob.sync(resolve(__dirname, 'src', '*.html')),
+      input: glob.sync(resolve(__dirname, 'src', '**/*.html')),
       output: {
         chunkFileNames: 'assets/js/[name].js',
         entryFileNames: 'assets/js/[name].js',
